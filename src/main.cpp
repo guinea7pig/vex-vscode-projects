@@ -77,7 +77,9 @@ Brain.Battery.current();
 
 void moterinfo()
 {
-//motor 3
+//motor 3// arm motor
+//motor 1//left motor 
+//motor 2 //right motor
 Motor3.position(degrees);
 
 }
