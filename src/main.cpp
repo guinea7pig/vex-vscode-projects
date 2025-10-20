@@ -26,6 +26,7 @@
 // Allows for easier use of the VEX Library
 using namespace vex;
 
+
 void  dispaly()
 {
   //init but not main screeen
@@ -66,6 +67,7 @@ Drivetrain.driveFor(forward, 200, mm);
 Drivetrain.turnFor(right, 90, degrees);
 Drivetrain.driveFor(forward, 200, mm);
 Drivetrain.turnFor(right, 90, degrees);
+Drivetrain.driveFor(forward, 200, mm);
 
 Drivetrain.temperature(percent);
 }
