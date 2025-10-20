@@ -32,6 +32,8 @@ void  dispaly()
   //init but not main screeen
   //made to look like linux boot screnn
   //this linux boot screen is based off my hp envy
+  Brain.Screen.setPenColor(green);
+
   Brain.Screen.print("mounting /home");
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] mounted /home");  
@@ -68,6 +70,9 @@ Drivetrain.turnFor(right, 90, degrees);
 Drivetrain.driveFor(forward, 200, mm);
 Drivetrain.turnFor(right, 90, degrees);
 Drivetrain.driveFor(forward, 200, mm);
+Drivetrain.turnFor(right, 90, degrees);
+Drivetrain.driveFor(forward, 200, mm);
+
 
 Drivetrain.temperature(percent);
 }
