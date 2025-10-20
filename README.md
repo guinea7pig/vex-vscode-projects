@@ -1,1 +1,2 @@
-this a project that im working on in school
+**vex coding project**
+this is the code for my vexcode project

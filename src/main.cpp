@@ -41,6 +41,7 @@ void  dispaly()
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] reached target for local filesystems");
   Brain.Screen.newLine();
+  Brain.Screen.print("");
 
 
 
@@ -52,6 +53,23 @@ void  dispaly()
 
 }
 
+void battery1()
+{
+Brain.Battery.voltage(volt);
+Brain.Battery.current(amp);
+Brain.Battery.current();
+}
+
+void movmenent()
+{
+Drivetrain.driveFor(forward, 200, mm);
+Drivetrain.turnFor(right, 90, degrees);
+Drivetrain.driveFor(forward, 200, mm);
+Drivetrain.turnFor(right, 90, degrees);
+
+Drivetrain.temperature(percent);
+}
+
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
@@ -59,6 +77,9 @@ int main() {
   // Begin project code
   //calling stuff
   dispaly();
+  //want to wait for intial boot u
+  movmenent();
+
 }
 
 
@@ -75,14 +96,15 @@ Brain.Battery.current(amp);
 Brain.Battery.current();
 }
 
+
 void moterinfo()
 {
 //motor 3// arm motor
 //motor 1//left motor 
 //motor 2 //right motor
 Motor3.position(degrees);
-
 }
+
 
 void Controller()
 {
