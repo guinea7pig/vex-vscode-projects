@@ -27,6 +27,7 @@
 using namespace vex;
 
 
+
 void  dispaly()
 {
   //init but not main screeen
@@ -35,6 +36,7 @@ void  dispaly()
   Brain.Screen.setPenColor(green);
 
   Brain.Screen.print("mounting /home");
+  wait(5,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] mounted /home");  
   Brain.Screen.newLine();
