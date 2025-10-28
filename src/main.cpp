@@ -50,6 +50,8 @@ void  dispaly()
   wait(1.5,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("");
+    wait(1.5,seconds);
+
 
 
 
@@ -105,7 +107,7 @@ void battery()
 {
 Brain.Battery.voltage(volt);
 Brain.Battery.current(amp);
-Brain.Battery.current();
+Brain.Battery.capacity();
 }
 
 
@@ -115,12 +117,15 @@ void moterinfo()
 //motor 1//left motor 
 //motor 2 //right motor
 Motor3.position(degrees);
+//Drivetrain
+
 }
+
+
 
 
 void Controller()
 {
 //call this after main it sequnce with display
 Controller1.Screen.print("VEXcode");
-
 }
