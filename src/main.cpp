@@ -27,13 +27,14 @@
 using namespace vex;
 
 
+
 void  dispaly()
 {
   //init but not main screeen
   //made to look like linux boot screnn
   //this linux boot screen is based off my hp envy
   Brain.Screen.setPenColor(green);
-
+  //brain is 10 charcters long
   Brain.Screen.print("mounting /home");
   wait(1.5,seconds);
   Brain.Screen.newLine();
@@ -49,13 +50,29 @@ void  dispaly()
   Brain.Screen.print("[ok] reached target for local filesystems");
   wait(1.5,seconds);
   Brain.Screen.newLine();
-  Brain.Screen.print("");
-    wait(1.5,seconds);
-
-
-
-
-  //Brain.Screen.clearScreen();
+  Brain.Screen.print("d");
+  wait(1.5,seconds);
+  Brain.Screen.newLine();
+  Brain.Screen.print("d");
+  Brain.Screen.newLine();
+  wait(1.5,seconds);
+  Brain.Screen.print("d");
+  Brain.Screen.newLine();
+  wait(1.5,seconds);
+  Brain.Screen.print("d");
+  Brain.Screen.newLine();
+  wait(1.5,seconds);
+  Brain.Screen.print("d");
+  Brain.Screen.newLine();
+  wait(1.5,seconds);
+  Brain.Screen.print("d");
+  Brain.Screen.newLine();
+  wait(1.5,seconds);
+  Brain.Screen.print("d");
+  Brain.Screen.newLine();
+  wait(1.5,seconds);
+  
+ Brain.Screen.clearScreen();
   Brain.Screen.print("VEXcode");
 
   //Brain.Screen.clearScreen();
@@ -128,4 +145,5 @@ void Controller()
 {
 //call this after main it sequnce with display
 Controller1.Screen.print("VEXcode");
+
 }
