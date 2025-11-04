@@ -27,7 +27,6 @@
 using namespace vex;
 
 
-
 void  dispaly()
 {
   //init but not main screeen
@@ -96,9 +95,17 @@ Drivetrain.turnFor(right, 90, degrees);
 Drivetrain.driveFor(forward, 200, mm);
 Drivetrain.turnFor(right, 90, degrees);
 Drivetrain.driveFor(forward, 200, mm);
+Motor3.spinFor(forward, 180, degrees);
+claw.spinFor(forward, 180, degrees);
+
 
 
 Drivetrain.temperature(percent);
+}
+
+void arm()
+{
+  
 }
 
 int main() {
