@@ -27,6 +27,12 @@
 using namespace vex;
 
 
+/ Include the V5 Library
+#include "vex.h"
+  
+// Allows for easier use of the VEX Library
+using namespace vex;
+
 void  dispaly()
 {
   //init but not main screeen
@@ -108,7 +114,7 @@ void arm()
   
 }
 
-void Controller()
+void Controllerinfo()
 {
 //call this after main it sequnce with display
 Controller1.Screen.print("VEXcode");
@@ -124,6 +130,7 @@ int main() {
   dispaly();
   //want to wait for intial boot u
   movmenent();
+  Controllerinfo();
 
 }
 
@@ -149,5 +156,8 @@ void moterinfo()
 //motor 2 //right motor
 Motor3.position(degrees);
 //Drivetrain
-
 }
+
+
+
+
