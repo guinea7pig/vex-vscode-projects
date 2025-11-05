@@ -35,41 +35,41 @@ void  dispaly()
   Brain.Screen.setPenColor(green);
   //brain is 10 charcters long
   Brain.Screen.print("mounting /home");
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] mounted /home"); 
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] reached target for local filesystems");
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] reached target for local filesystems");
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("[ok] reached target for local filesystems");
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("d");
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.newLine();
   Brain.Screen.print("d");
   Brain.Screen.newLine();
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.print("d");
   Brain.Screen.newLine();
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.print("d");
   Brain.Screen.newLine();
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.print("d");
   Brain.Screen.newLine();
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.print("d");
   Brain.Screen.newLine();
-  wait(1.5,seconds);
+  wait(1,seconds);
   Brain.Screen.print("d");
   Brain.Screen.newLine();
-  wait(1.5,seconds);
+  wait(1,seconds);
   
  Brain.Screen.clearScreen();
   Brain.Screen.print("VEXcode");
@@ -108,6 +108,13 @@ void arm()
   
 }
 
+void Controller()
+{
+//call this after main it sequnce with display
+Controller1.Screen.print("VEXcode");
+
+}
+
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
@@ -142,15 +149,5 @@ void moterinfo()
 //motor 2 //right motor
 Motor3.position(degrees);
 //Drivetrain
-
-}
-
-
-
-
-void Controller()
-{
-//call this after main it sequnce with display
-Controller1.Screen.print("VEXcode");
 
 }
